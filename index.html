@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>socorex</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
+<!-- tabs -->
+<div class="tabs">
+    <button class =" tablinks " onclick = " openTab(Event, 'recherche')" >Chercher</button>
+    <button class =" tablinks " onclick = " openTab(Event, 'stock')" >Stock</button>
+    <button class =" tablinks " onclick = " openTab(Event, 'vente')" >Vente</button>
+    <button class =" tablinks " onclick = " openTab(Event, 'Nouveau')" >Nouveau</button>
+</div>
+
+<!-- first tab content -->
+<div id="recherche"  class="tabcontent">
+    <h1>Veuillez saisir le nom d'article:</h1>
+
+<!-- formulaire de recherche-->
+    <form id="searchForm">
+    <input type="text" class="nom" placeholder="Entrez le nom d'article" id="searchInput">
+        <!-- liste  de suggestions-->
+        <ul id="suggestions" ></ul>
+    <button type="submit">Chercher</button>
+    </form>
+    <table id="resulttable">
+        <thead>
+            <tr>
+            <th>Nom d'article</th>
+            <th>Prix de revient</th>
+            <th>Prix de Vente</th>
+            <th>Unité en Stock</th>
+            </tr>
+        </thead>
+        <tbody id="resultBody"></tbody>
+    </table>
+</div>
+
+<!-- second tab content -->
+<div id="stock" class="tabcontent">
+   <h1>Actualiser le stock:</h1>
+</div>
+
+<!-- third tab content -->
+<div id="vente" class="tabcontent" >
+   <h1>Choisir l'article vendu:</h1>
+</div>
+
+<!-- fourth tab content -->
+<div id="Nouveau" class="tabcontent">
+    <h1>Choisir l'article Nouveau:</h1>
+</div>
+
+
+
 </body>
+<script src="script.js"></script>
 </html>
