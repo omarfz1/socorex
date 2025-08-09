@@ -7,7 +7,7 @@
 
 </head>
 <body>
-
+<section  id="container">
 <!-- tabs -->
 <div class="tabs">
     <button class =" tablinks " onclick = " openTab(Event, 'recherche')" >Chercher</button>
@@ -18,14 +18,14 @@
 
 <!-- first tab content -->
 <div id="recherche"  class="tabcontent">
-    <h1>Veuillez saisir le nom d'article:</h1>
+    <div id="phrase"><h1>Veuillez saisir le nom d'article:</h1></div>
 
 <!-- formulaire de recherche-->
     <form id="searchForm">
-    <input type="text" class="nom" placeholder="Entrez le nom d'article" id="searchInput">
+    <input type="text"  placeholder="Entrez le nom d'article" id="searchInput">
         <!-- liste  de suggestions-->
         <ul id="suggestions" ></ul>
-    <button type="submit">Chercher</button>
+    <button type="submit"  >Chercher</button>
     </form>
     <table id="resulttable">
         <thead>
@@ -40,7 +40,10 @@
     </table>
 </div>
 
+
+
 <!-- second tab content -->
+
 <div id="stock" class="tabcontent">
    <h1>Actualiser le stock:</h1>
 </div>
@@ -54,7 +57,7 @@
 <div id="Nouveau" class="tabcontent">
     <h1>Choisir l'article Nouveau:</h1>
 </div>
-
+</section>
 
 
 </body>
